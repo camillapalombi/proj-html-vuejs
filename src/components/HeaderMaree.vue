@@ -11,7 +11,10 @@
 
           <ul>
               <li v-for="link in arrNavLinks" :key="link"> 
+                  
                   <a href="#!"> {{ link.link}}</a>
+                  <div class="underline-active-link"></div>
+                  
               </li>
 
               <li>
@@ -91,11 +94,31 @@ header {
                 font-size: 12px;
             }
 
+            li {
+                position: relative;
+                z-index: 20;
+
+                &:hover .underline-active-link {
+                    display: block;
+                }
+            }
+        
             .svg-menù {
                 width: 16px;
                 vertical-align: middle;
             }
         }
     }
+}
+
+.underline-active-link {
+    display: none;
+    width: 120%;
+    height: 5px;
+    background-color: rgba(255, 208, 216,0.6);
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    cursor: pointer;
 }
 </style>
