@@ -11,8 +11,8 @@
 
 <script>
 //IMPORT
-import HeaderMaree from '../src/components/HeaderMaree.vue';
-import MainMaree from '../src/components/MainMaree.vue';
+import HeaderMaree from '@/components/HeaderMaree.vue';
+import MainMaree from '@/components/MainMaree.vue';
 
 //EXPORT
 export default {

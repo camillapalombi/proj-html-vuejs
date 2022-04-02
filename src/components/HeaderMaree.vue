@@ -3,14 +3,14 @@
 
       <!-- HEADER LEFT / LOGO -->
       <div class="header-left">
-          <img class="maree-logo" src="./../assets/img/logo-sidearea-1.png" alt="Marèe Logo">
+          <img class="maree-logo" src="./../../public/img/logo-sidearea-1.png" alt="Marèe Logo">
       </div>
 
       <!-- HEADER RIGHT / NAV -->
       <nav class="header-right">
 
           <ul>
-              <li v-for="link in arrNavLinks" :key="link"> 
+              <li v-for="link in arrNavLinks" :key="link.link"> 
                   
                   <a href="#!"> {{ link.link}}</a>
                   <div class="underline-active-link"></div>
@@ -19,7 +19,7 @@
 
               <li>
                   <a href="#!">
-                      <img class="svg-menù" src="./../assets/img/svg-1-dado.svg" alt="Menù link">
+                      <img class="svg-menù" src="./../../public/img/svg-1-dado.svg" alt="Menù link">
                   </a>
               </li>
 
