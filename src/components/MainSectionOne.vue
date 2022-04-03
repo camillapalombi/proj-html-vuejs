@@ -240,6 +240,7 @@ h1 {
 	height: .4rem;
 	border-radius: 10rem;
 	background-color: $lightPink;
+    border-bottom: .2rem solid transparent;
 }
 
 .circle.active {
