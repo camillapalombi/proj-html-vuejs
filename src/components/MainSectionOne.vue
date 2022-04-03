@@ -40,6 +40,10 @@
         <button @click="previus()" class="btn-control btn-previus">&lt;</button>
 		<button @click="next()" class="btn-control btn-next"> &GT; </button>
 
+        <div class="circles">
+			<div v-for="(element, index) in arrSlider" @click="setActiveIndex(index)" :key="index" class="circle" :class="{active: index == activeIndex}"></div>
+		</div>
+
   </section>
 </template>
 
@@ -49,7 +53,7 @@ name: 'MainSectionOne',
 data () {
     return {
         activeIndex: 0,
-        interval: 5000,
+        interval: 4000,
 		intervalId: null,
         arrSlider: [
             {
@@ -98,7 +102,7 @@ methods: {
 			this.intervalId = setInterval(this.next, this.interval);
 		}
 	},
-    mounted() {
+    mounted () {
 		// quando il DOM viene montato nella pagina avviamo lo slider automatico
 		this.startSlider();
 	},
@@ -222,6 +226,26 @@ h1 {
     font-size: 12px;
     margin-top: 35px;
     cursor: pointer;
+}
+.circles {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.circle {
+    margin: .7rem;
+	width: .4rem;
+	height: .4rem;
+	border-radius: 10rem;
+	background-color: $lightPink;
+}
+
+.circle.active {
+	width: .6rem;
+    height: .6rem;
+    background-color: #efb09e;
 }
 
 
