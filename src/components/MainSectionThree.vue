@@ -15,7 +15,11 @@
 
               <div class="subtitle"> {{ card.subtitle }}</div>
           </div>
+
+          
       </div>
+
+      <img class="pink-wave" src="./../../public/img/svg-3-onda-rosa.svg" alt="">
       </div>
   </section>
 </template>
@@ -36,19 +40,19 @@ data () {
                 icon: 'message.svg',
                 iconRight: '',
                 title: 'Then we talk about',
-                subtitle: 'Lorem ipsum dolor sit amet exercitationem repellat facilis fugiat sunt in perferendis dolor.'
+                subtitle: 'Lorem ipsum dolor sit amet exercitationem repellat facilis fugiat sunt in perferendis.'
             },
             {
                 icon: 'cloud.svg',
                 iconRight: '',
                 title: 'And we think about',
-                subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio, perferendis dolor.'
+                subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio, perferendis.'
             },
             {
                 icon: 'pencil.svg',
                 iconRight: 'pen.svg',
                 title: 'So we draw along',
-                subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio, exercitationem.'
+                subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio.'
             },
         ]
     }
@@ -61,16 +65,18 @@ data () {
 @import '../assets/style/partials/variables';
 
 .section-three {
-    height: 25rem;
+    height: 28rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container-section-content {
+    height: 20rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .cursive-world {
     font-family: 'Cormorant Garamond', serif;
@@ -81,14 +87,15 @@ data () {
 h2 {
     font-size: 40px;
     font-weight: 100;
+    margin-bottom: 40px;
 }
 img {
-    width: 50px;
+    width: 35px;
 }
 .container-all-cards {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 .card-box {
     display: flex;
@@ -96,17 +103,39 @@ img {
     justify-content: center;
     align-items: center;
     width: 250px;
+    margin-left: 15px;
+    line-height: 1.5em;
 }
 .subtitle {
     text-align: center;
     color: $subtitleGrey;
-    font-size: 13px;
+    font-size: 12px;
+    margin-top: 10px;
 }
 .rotate {
     transform: rotate(315deg);
 }
 .rotate-top {
     transform: rotate(135deg);
+    margin-left: -15px;
+}
+.img-bubble {
+    width: 130px;
+    height: 130px;
+    background-color: #FAF7F1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    z-index: 20;
+}
+.pink-wave {
+    width: 800px;
+    transform: rotate(360deg);
+    position: absolute;
+    top: 100px;
+    left: 20;
 }
 
 </style>
