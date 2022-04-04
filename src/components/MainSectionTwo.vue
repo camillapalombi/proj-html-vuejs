@@ -27,8 +27,6 @@
             </a>
         </div>
 
-
-
   </section>
 </template>
 
@@ -68,7 +66,7 @@ data () {
 
 .section-two {
     height: 60rem;
-    margin: 80px auto;
+    margin-top: 80px;
     background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
