@@ -1,7 +1,7 @@
 <template>
   <section class="section-three">
       <div class="container-section-content">
-      <h2>Working <span class="cursive-world">process</span> </h2>
+      <h2>Working <span class="cursive-word">process</span> </h2>
 
       <div class="container-all-cards">
           <div class="card-box" v-for="card in arrCards" :key="card.title">
@@ -87,7 +87,7 @@ data () {
     flex-direction: column;
     position: relative;
 }
-.cursive-world {
+.cursive-word {
     font-family: 'Cormorant Garamond', serif;
     font-size: 60px;
     font-style: italic;
