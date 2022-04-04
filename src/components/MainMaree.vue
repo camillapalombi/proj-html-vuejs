@@ -12,24 +12,26 @@
       <section class="section-four">
         <h2>Want to work with us? Send us <span class="cursive-word">a message!</span> </h2>
         <div class="subtitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sequi iure a aperiam magni totam obcaecati nihil in iste, officiis ipsum minima ad incidunt, cum temporibus magnam vitae provident veritatis.</div>
-        <button class="btn-contact">CONTACT</button>
-              <!--Immagini di background-->
-        <img class="clouds cloud-1" src="./../../public/img/cloud-green.svg" alt="">
+        <button class="btn-contact">CONTACT
+          <div class="bubble-hover"></div>
+        </button>
 
-        <img class="clouds cloud-2" src="./../../public/img/cloud-rosino.svg" alt="">
+              <!--piccole immagini di background-->
+        <img class="clouds cloud-1" src="./../../public/img/cloud-green.svg" alt="Cloud">
+        <img class="clouds cloud-2" src="./../../public/img/cloud-rosino.svg" alt="Cloud">
+        <img class="clouds cloud-3" src="./../../public/img/cloud-green.svg" alt="Cloud">
+        <img class="clouds cloud-4" src="./../../public/img/cloud-green-2.svg" alt="Cloud">
+        <img class="clouds cloud-5" src="./../../public/img/cloud-rosino.svg" alt="Cloud">
+        <img class="clouds cloud-6" src="./../../public/img/cloud-rosino.svg" alt="Cloud">
 
-        <img class="xmarks" src="./../../public/img/crocettine.png" alt="">
+        <img class="xmarks xmark-1" src="./../../public/img/crocettine.png" alt="Crocettine">
+        <img class="xmarks xmark-2" src="./../../public/img/crocettine.png" alt="Crocettine">
+        <img class="xmarks xmark-3" src="./../../public/img/crocettine.png" alt="Crocettine">
+        <img class="xmarks xmark-4" src="./../../public/img/crocettine.png" alt="Crocettine">
+        <img class="xmarks xmark-5" src="./../../public/img/crocettine.png" alt="Crocettine">
 
-        <img class="clouds cloud-3" src="./../../public/img/cloud-green.svg" alt="">
-
-        <img class="clouds cloud-4" src="./../../public/img/cloud-green-2.svg" alt="">
-
-        <img class="foglioline" src="./../../public/img/short-slider-rev-1-img-2.png" alt="">
-
-        <img class="xmarks-2" src="./../../public/img/crocettine.png" alt="">
-        <img class="xmarks-3" src="./../../public/img/crocettine.png" alt="">
-
-        <img class="clouds cloud-5" src="./../../public/img/cloud-rosino.svg" alt="">
+        <img class="foglioline-1" src="./../../public/img/short-slider-rev-1-img-2.png" alt="Foglioline">
+        <img class="foglioline-2" src="./../../public/img/short-slider-rev-1-img-6.png" alt="Foglioline">
         
 
       </section>
@@ -70,14 +72,15 @@ components: {
   overflow: hidden;
 }
 h2 {
-    font-size: 40px;
-    font-weight: 100;
-}
-.cursive-word {
+  font-size: 40px;
+  font-weight: 100;
+
+    .cursive-word {
     font-family: 'Cormorant Garamond', serif;
     font-size: 60px;
     font-style: italic;
     font-weight: 900;
+    }
 }
 .subtitle {
   width: 1000px;
@@ -94,6 +97,7 @@ h2 {
   font-size: 12px;
   font-weight: bold;
   margin-top: 25px;
+  position: relative;
 }
 .clouds {
   width: 500px;
@@ -110,13 +114,6 @@ h2 {
   left: 150px;
   width: 480px;
 }
-.xmarks {
-  position: absolute;
-  top: -60px;
-  left: 480px;
-  transform: rotate(90deg);
-  width: 80px;
-}
 .cloud-3 {
   top: -330px;
   right: -120px;
@@ -126,29 +123,71 @@ h2 {
   right: 110px;
   width: 480px;
 }
-.foglioline {
+.cloud-5 {
+  bottom: -420px;
+  right: -60px;
+  transform: rotate(280deg);
+}
+.cloud-6 {
+  bottom: -470px;
+  left: 150px;
+  transform: rotate(90deg);
+}
+.xmarks {
+  position: absolute;
+  width: 80px;
+}
+.xmark-1 {
+  top: -60px;
+  left: 480px;
+  transform: rotate(90deg);
+}
+.xmark-2 {
+  top: 70px;
+  right: 0;
+}
+.xmark-3 {
+  top: 90px;
+  right: 30px;
+}
+.xmark-4 {
+  bottom: -50px;
+  right: 200px;
+  transform: rotate(90deg);
+}
+.xmark-5 {
+  bottom: 0;
+  left: 0;
+}
+.foglioline-1 {
   width: 40px;
   position: absolute;
   top: 80px;
   right: 200px;
   filter: opacity(0.4);
 }
-.xmarks-2 {
+.foglioline-2 {
+  width: 40px;
   position: absolute;
-  top: 70px;
-  right: 0;
-  width: 80px;
+  bottom: 10px;
+  left: 120px;
+  filter: opacity(0.4);
 }
-.xmarks-3 {
+.bubble-hover {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #f5d8ca;
   position: absolute;
-  top: 90px;
-  right: 30px;
-  width: 80px;
+  bottom: 0;
+  right: 15px;
+  display: none;
 }
-.cloud-5 {
-  bottom: -420px;
-  right: -60px;
-  transform: rotate(280deg);
+.btn-contact:hover {
+  color: white;
+  background-color: #e1c0b0;
 }
-
+.btn-contact:hover .bubble-hover {
+  display: block;
+}
 </style>
