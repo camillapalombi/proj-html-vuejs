@@ -1,8 +1,14 @@
 <template>
   <section class="section-two">
 
-      <div class="container-image" v-for="image in arrPhotos" :key="image">
+      <div class="container-image" v-for="image in arrPhotos" :key="image" :class="{bookhover: image.image == 'h-2-port-img-4.jpg'}">
           <img :src="require('./../../public/img/' + image.image)" alt="">
+
+          <div class="box-hover-book">
+              <h2>Illustration of novels</h2>
+              <div class="cursive-word">Illustration</div>
+          </div>
+
       </div>
 
         <!--CONTAINER TOP ICONS-->
@@ -128,5 +134,31 @@ data () {
 .lowest-arrow {
     bottom: 20px;
     background-color: $footerBackground;
+}
+.bookhover {
+    position: relative;
+}
+.box-hover-book {
+    width: 270px;
+    height: 90px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: none;
+    padding: 1.2em;
+}
+.bookhover:hover .box-hover-book {
+    display: block;
+}
+h2 {
+    font-weight: 100;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.cursive-word {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
 }
 </style>
