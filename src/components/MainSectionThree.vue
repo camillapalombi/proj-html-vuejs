@@ -16,11 +16,18 @@
               <div class="subtitle"> {{ card.subtitle }}</div>
           </div>
 
-          
       </div>
 
       <img class="pink-wave" src="./../../public/img/svg-3-onda-rosa.svg" alt="">
+
       </div>
+
+      <div class="container-arrow">
+            <a href="#">
+                <img src="./../../public/img/svg-5-freccina.svg" alt="Top arrow">
+            </a>
+        </div>
+
   </section>
 </template>
 
@@ -65,13 +72,15 @@ data () {
 @import '../assets/style/partials/variables';
 
 .section-three {
-    height: 28rem;
+    height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    position: relative;
 }
 .container-section-content {
-    height: 20rem;
+    height: 25rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,7 +96,6 @@ data () {
 h2 {
     font-size: 40px;
     font-weight: 100;
-    margin-bottom: 40px;
 }
 img {
     width: 35px;
@@ -134,8 +142,27 @@ img {
     width: 800px;
     transform: rotate(360deg);
     position: absolute;
-    top: 100px;
+    top: 150px;
     left: 20;
+}
+.container-arrow {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: $footerBackground;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        width: 22px;
+        transform: rotate(270deg);
+        margin-left: 2px;
+        margin-top: 2px;
+    }
 }
 
 </style>
