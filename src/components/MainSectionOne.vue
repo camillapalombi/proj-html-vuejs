@@ -37,8 +37,8 @@
         
       </div>
         <!--BOTTONI AVANTI/INDIETRO-->
-        <button @click="previus()" class="btn-control btn-previus">&lt;</button>
-		<button @click="next()" class="btn-control btn-next"> &GT; </button>
+        <button @click="previus()" class="btn-control btn-previus"> <font-awesome-icon icon="fa-solid fa-chevron-left" /> </button>
+		<button @click="next()" class="btn-control btn-next"> <font-awesome-icon icon="fa-solid fa-chevron-right" /> </button>
 
         <div class="circles">
 			<div v-for="(element, index) in arrSlider" @click="setActiveIndex(index)" :key="index" class="circle" :class="{active: index == activeIndex}"></div>
