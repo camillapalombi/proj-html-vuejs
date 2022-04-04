@@ -169,7 +169,7 @@ h1 {
     line-height: 1.2em;
 }
 .subtitle {
-    color: grey;
+    color: $subtitleGrey;
     margin-top: 15px;
 }
 .cursive-world {
