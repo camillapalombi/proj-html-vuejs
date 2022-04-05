@@ -73,7 +73,7 @@ data () {
     position: relative;
 }
 .container-single-card {
-    width: 250px;
+    width: 270px;
     margin-right: 20px;
     position: relative;
     .calendar-img {

@@ -11,11 +11,19 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+
+import { faPinterestP } from '@fortawesome/free-brands-svg-icons'
+
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faChevronLeft, faChevronRight, faBookmark)
+library.add(faChevronLeft, faChevronRight, faBookmark, faTwitter, faPinterestP, faFacebookF, faLinkedinIn)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

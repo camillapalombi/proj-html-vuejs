@@ -5,6 +5,8 @@
     <header-maree />
     <!--MAIN-->
     <main-maree />
+    <!--FOOTER-->
+    <footer-maree />
 
   </div>
 </template>
@@ -13,6 +15,7 @@
 //IMPORT
 import HeaderMaree from '@/components/HeaderMaree.vue';
 import MainMaree from '@/components/MainMaree.vue';
+import FooterMaree from '@/components/FooterMaree.vue';
 
 //EXPORT
 export default {
@@ -20,6 +23,7 @@ export default {
   components: {
     HeaderMaree,
     MainMaree,
+    FooterMaree
   }
 }
 </script>
