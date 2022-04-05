@@ -3,7 +3,9 @@
       <div class="container-footer-contents">
 
           <div class="footer-left">
-              <img class="maree-logo" src="./../../public/img/logo-sidearea-1.png" alt="Marèe Logo">
+              <a href="#">
+                  <img class="maree-logo" src="./../../public/img/logo-sidearea-1.png" alt="Marèe Logo">
+              </a>
               <div>Let's get creative</div>
           </div>
 

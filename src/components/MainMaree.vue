@@ -42,10 +42,10 @@
 </template>
 
 <script>
-import MainSectionOne from '@/components/MainSectionOne.vue'
-import MainSectionTwo from '@/components/MainSectionTwo.vue'
-import MainSectionThree from '@/components/MainSectionThree.vue'
-import MainSectionFive from '@/components/MainSectionFive.vue'
+import MainSectionOne from './MainSectionOne.vue'
+import MainSectionTwo from './MainSectionTwo.vue'
+import MainSectionThree from './MainSectionThree.vue'
+import MainSectionFive from './MainSectionFive.vue'
 
 export default {
 name: 'MainMaree',

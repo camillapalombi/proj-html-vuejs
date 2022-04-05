@@ -13,9 +13,9 @@
 
 <script>
 //IMPORT
-import HeaderMaree from '@/components/HeaderMaree.vue';
-import MainMaree from '@/components/MainMaree.vue';
-import FooterMaree from '@/components/FooterMaree.vue';
+import HeaderMaree from './components/HeaderMaree.vue';
+import MainMaree from './components/MainMaree.vue';
+import FooterMaree from './components/FooterMaree.vue';
 
 //EXPORT
 export default {
