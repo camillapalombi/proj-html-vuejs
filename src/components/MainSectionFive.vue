@@ -5,9 +5,25 @@
 
         <img class="calendar-img" :src="require('./../../public/img/' + element.image)" alt="Calendar image">
         <div class="title">{{ element.title }}</div>
-        <div class="author">{{ element.author }}</div>
+        <div class="author">By {{ element.author }}</div>
+
+        <div class="container-bookmark">
+            <div class="day">
+                <div class="content-day">{{ element.day }}</div>
+            </div>
+            <div class="month-year">
+                <font-awesome-icon icon="fa-solid fa-bookmark" />
+                <div class="data">{{ element.month }}</div>
+            </div>
+        </div>
 
       </div>
+
+        <div class="container-arrow">
+            <a href="#">
+                <img src="./../../public/img/svg-5-freccina.svg" alt="Top arrow">
+            </a>
+        </div>
 
   </section>
 </template>
@@ -54,12 +70,75 @@ data () {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .container-single-card {
-    width: 240px;
-    margin-right: 15px;
+    width: 250px;
+    margin-right: 20px;
+    position: relative;
     .calendar-img {
         width: 100%;
+    }
+}
+.title {
+    font-size: 17px;
+    margin: 10px auto;
+}
+.author {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+.container-bookmark {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+.day {
+    width: 40px;
+    height: 30px;
+    background-color: $footerBackground;
+    line-height: 1em;
+}
+.fa-bookmark {
+    font-size: 53px;
+    color: $lightPink;
+    margin-top: -25px;
+}
+.month-year {
+    overflow: hidden;
+    position: relative;
+}
+.data {
+    font-size: 9px;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+.content-day {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 35px;
+    text-align: center;
+}
+
+.container-arrow {
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    width: 30px;
+    height: 30px;
+    background-color: $footerBackground;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        width: 22px;
+        transform: rotate(270deg);
+        margin-left: 2px;
+        margin-top: 2px;
     }
 }
 
