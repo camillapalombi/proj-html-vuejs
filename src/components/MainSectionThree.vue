@@ -129,6 +129,8 @@ data () {
                     align-items: center;
                     margin-bottom: 15px;
                     z-index: 20;
+                    transition: all .5s;
+                    cursor: pointer;
 
                         img {
                             width: 35px;
@@ -150,6 +152,9 @@ data () {
                 }
         }
 }
+.img-bubble:hover {
+    transform: scale(1.2);
+}
 .pink-wave {
     width: 800px;
     transform: rotate(360deg);
@@ -168,6 +173,7 @@ data () {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all .5s;
 
     img {
         width: 22px;
@@ -175,5 +181,9 @@ data () {
         margin-left: 2px;
         margin-top: 2px;
     }
+}
+.container-arrow:hover {
+    transform: scale(1.2);
+    background-color: #85bd9e;
 }
 </style>

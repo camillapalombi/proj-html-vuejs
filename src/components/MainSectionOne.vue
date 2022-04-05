@@ -52,7 +52,7 @@ name: 'MainSectionOne',
 data () {
     return {
         activeIndex: 0,
-        interval: 3000,
+        interval: 4000,
 		intervalId: null,
         arrSlider: [
             {
@@ -162,6 +162,11 @@ methods: {
                     font-size: 12px;
                     margin-top: 35px;
                     cursor: pointer;
+                    transition: all .5s;
+                }
+                .btn-read-more:hover {
+                    background-color: $lightPink;
+                    color: white;
                 }
         }
 
@@ -225,6 +230,10 @@ methods: {
     background-color: $lightPink;
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
+    transition: all .5s;
+}
+.btn-control:hover {
+    transform: scale(1.3);
 }
 .btn-next {
     right: 20px;
@@ -245,6 +254,7 @@ methods: {
             border-radius: 10rem;
             background-color: $lightPink;
             border-bottom: .2rem solid transparent;
+            cursor: pointer;
         }
 }
 

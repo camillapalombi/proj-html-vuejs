@@ -91,6 +91,7 @@ data () {
 //classe data al container dell'img book:
 .bookhover {
     position: relative;
+    transition: all .5s;
 }
 .box-hover-book {
     width: 270px;
@@ -131,6 +132,9 @@ data () {
         width: 15px;
     }
 }
+.container-top-icons:hover {
+    background-color: rgb(158, 255, 158);
+}
 .chiocciolina {
     top: 80px;
     background-color: #ef2853;
@@ -149,6 +153,7 @@ data () {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all .5s;
 
     img {
         width: 22px;
@@ -156,6 +161,10 @@ data () {
         margin-left: 2px;
         margin-top: 2px;
     }
+}
+.container-bottom-icons:hover {
+    transform: scale(1.2);
+    background-color: #85bd9e;
 }
 .highest-arrow {
     bottom: 450px;

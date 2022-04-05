@@ -75,8 +75,13 @@ footer {
 
                         .fa-twitter, .fa-pinterest-p, .fa-facebook-f, .fa-linkedin-in {
                             cursor: pointer;
+                            transition: all .5s;
                         }
                 }
         }
+}
+
+.fa-twitter:hover, .fa-pinterest-p:hover, .fa-facebook-f:hover, .fa-linkedin-in:hover {
+    transform: scale(1.9);
 }
 </style>

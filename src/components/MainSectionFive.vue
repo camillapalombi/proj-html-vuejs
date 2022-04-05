@@ -142,6 +142,7 @@ data () {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all .5s;
 
     img {
         width: 22px;
@@ -149,6 +150,10 @@ data () {
         margin-left: 2px;
         margin-top: 2px;
     }
+}
+.container-arrow:hover {
+    transform: scale(1.2);
+    background-color: #85bd9e;
 }
 
 </style>
