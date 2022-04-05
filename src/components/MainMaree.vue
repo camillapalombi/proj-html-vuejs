@@ -33,8 +33,10 @@
         <img class="foglioline-1" src="./../../public/img/short-slider-rev-1-img-2.png" alt="Foglioline">
         <img class="foglioline-2" src="./../../public/img/short-slider-rev-1-img-6.png" alt="Foglioline">
         
-
       </section>
+
+      <!--SECTION 5 -->
+      <main-section-five />
 
   </main>
 </template>
@@ -43,13 +45,15 @@
 import MainSectionOne from '@/components/MainSectionOne.vue'
 import MainSectionTwo from '@/components/MainSectionTwo.vue'
 import MainSectionThree from '@/components/MainSectionThree.vue'
+import MainSectionFive from '@/components/MainSectionFive.vue'
 
 export default {
 name: 'MainMaree',
 components: {
     MainSectionOne,
     MainSectionTwo,
-    MainSectionThree
+    MainSectionThree,
+    MainSectionFive
 }
 }
 </script>
@@ -98,6 +102,7 @@ h2 {
   font-weight: bold;
   margin-top: 25px;
   position: relative;
+  transition: all 1s;
 }
 .clouds {
   width: 500px;
