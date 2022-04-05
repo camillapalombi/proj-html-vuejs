@@ -12,8 +12,8 @@
       <section class="section-four">
         <h2>Want to work with us? Send us <span class="cursive-word">a message!</span> </h2>
         <div class="subtitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sequi iure a aperiam magni totam obcaecati nihil in iste, officiis ipsum minima ad incidunt, cum temporibus magnam vitae provident veritatis.</div>
-        <button class="btn-contact">CONTACT
-          <div class="bubble-hover"></div>
+        <button class="btn-contact"> CONTACT
+          <div class="bubble-hover"></div> <!--hover sul bottone (bolla) -->
         </button>
 
               <!--piccole immagini di background-->
@@ -74,36 +74,61 @@ components: {
   align-items: center;
   position: relative;
   overflow: hidden;
-}
-h2 {
-  font-size: 40px;
-  font-weight: 100;
 
-    .cursive-word {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 60px;
-    font-style: italic;
-    font-weight: 900;
+    h2 {
+      font-size: 40px;
+      font-weight: 100;
+
+      .cursive-word {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 60px;
+        font-style: italic;
+        font-weight: 900;
+      }
+    }
+
+    .subtitle {
+      width: 1000px;
+      color: $subtitleGrey;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn-contact {
+      border: none;
+      background-color: $footerBackground;
+      cursor: pointer;
+      font-family: 'Quicksand', sans-serif;
+      padding: .9em 3.6em;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 25px;
+      position: relative;
+      transition: all 1s;
+
+        .bubble-hover {
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          background-color: #f5d8ca;
+          position: absolute;
+          bottom: 0;
+          right: 15px;
+          display: none;
+        }
     }
 }
-.subtitle {
-  width: 1000px;
-  color: $subtitleGrey;
-  text-align: center;
-  margin-top: 20px;
+
+//effetto di hover
+.btn-contact:hover {
+  color: white;
+  background-color: #e1c0b0;
 }
-.btn-contact {
-  border: none;
-  background-color: $footerBackground;
-  cursor: pointer;
-  font-family: 'Quicksand', sans-serif;
-  padding: .9em 3.6em;
-  font-size: 12px;
-  font-weight: bold;
-  margin-top: 25px;
-  position: relative;
-  transition: all 1s;
+.btn-contact:hover .bubble-hover {
+  display: block;
 }
+
+//posizionamento delle piccole imgs di background!
 .clouds {
   width: 500px;
   position: absolute;
@@ -177,22 +202,5 @@ h2 {
   bottom: 10px;
   left: 120px;
   filter: opacity(0.4);
-}
-.bubble-hover {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: #f5d8ca;
-  position: absolute;
-  bottom: 0;
-  right: 15px;
-  display: none;
-}
-.btn-contact:hover {
-  color: white;
-  background-color: #e1c0b0;
-}
-.btn-contact:hover .bubble-hover {
-  display: block;
 }
 </style>

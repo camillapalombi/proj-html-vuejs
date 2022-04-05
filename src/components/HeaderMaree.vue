@@ -12,13 +12,14 @@
       <nav class="header-right">
 
           <ul>
+              
+            <!--Links-->
               <li v-for="link in arrNavLinks" :key="link.link"> 
-                  
                   <a href="#!"> {{ link.link}}</a>
-                  <div class="underline-active-link"></div>
-                  
+                  <div class="underline-active-link"></div> <!--hover sui link-->
               </li>
 
+            <!--Immagine menù-->
               <li>
                   <a href="#!">
                       <img class="svg-menù" src="./../../public/img/svg-1-dado.svg" alt="Menù link">

@@ -1,32 +1,37 @@
 <template>
   <section class="section-three">
       <div class="container-section-content">
-      <h2>Working <span class="cursive-word">process</span> </h2>
 
+        <!--TITOLO-->
+      <h2>Working <span class="cursive-word">process</span></h2>
+
+    <!--CONTAINER DI TUTTE LE CARDS -->
       <div class="container-all-cards">
+
+          <!--Container singola carda -->
           <div class="card-box" v-for="card in arrCards" :key="card.title">
+
               <div class="img-bubble">
                   <img :class="{rotate: card.icon == 'pencil.svg'}" :src="require('./../../public/img/' + card.icon)" alt="Icons section three">
-
                   <img class="rotate-top" v-if="card.iconRight !== ''" :src="require('./../../public/img/' + card.iconRight)" alt="Icons section three">
               </div>
-
               <div class="title"> {{ card.title }}</div>
-
               <div class="subtitle"> {{ card.subtitle }}</div>
+
           </div>
 
       </div>
-
+    <!--Onda rosa-->
       <img class="pink-wave" src="./../../public/img/svg-3-onda-rosa.svg" alt="">
 
       </div>
 
+    <!--Freccie in sù-->
       <div class="container-arrow">
             <a href="#">
                 <img src="./../../public/img/svg-5-freccina.svg" alt="Top arrow">
             </a>
-        </div>
+      </div>
 
   </section>
 </template>
@@ -78,65 +83,72 @@ data () {
     align-items: center;
     margin-bottom: 20px;
     position: relative;
-}
-.container-section-content {
-    height: 25rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-.cursive-word {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 60px;
-    font-style: italic;
-    font-weight: 900;
-}
-h2 {
-    font-size: 40px;
-    font-weight: 100;
-}
-img {
-    width: 35px;
+
+        .container-section-content {
+            height: 25rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: 100;
+
+                        .cursive-word {
+                            font-family: 'Cormorant Garamond', serif;
+                            font-size: 60px;
+                            font-style: italic;
+                            font-weight: 900;
+                        }
+                }
+        }
 }
 .container-all-cards {
     display: flex;
     justify-content: center;
     align-items: stretch;
-}
-.card-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    margin-left: 15px;
-    line-height: 1.5em;
-}
-.subtitle {
-    text-align: center;
-    color: $subtitleGrey;
-    font-size: 12px;
-    margin-top: 10px;
-}
-.rotate {
-    transform: rotate(315deg);
-}
-.rotate-top {
-    transform: rotate(135deg);
-    margin-left: -15px;
-}
-.img-bubble {
-    width: 130px;
-    height: 130px;
-    background-color: #FAF7F1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    z-index: 20;
+
+        .card-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            margin-left: 15px;
+            line-height: 1.5em;
+
+                .img-bubble {
+                    width: 130px;
+                    height: 130px;
+                    background-color: #FAF7F1;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    z-index: 20;
+
+                        img {
+                            width: 35px;
+                        }
+                        .rotate {
+                            transform: rotate(315deg);
+                        }
+                        .rotate-top {
+                            transform: rotate(135deg);
+                            margin-left: -15px;
+                        }
+                }
+
+                .subtitle {
+                    text-align: center;
+                    color: $subtitleGrey;
+                    font-size: 12px;
+                    margin-top: 10px;
+                }
+        }
 }
 .pink-wave {
     width: 800px;
@@ -164,5 +176,4 @@ img {
         margin-top: 2px;
     }
 }
-
 </style>

@@ -2,6 +2,7 @@
   <footer>
       <div class="container-footer-contents">
 
+        <!--Left-->
           <div class="footer-left">
               <a href="#">
                   <img class="maree-logo" src="./../../public/img/logo-sidearea-1.png" alt="Marèe Logo">
@@ -9,16 +10,19 @@
               <div>Let's get creative</div>
           </div>
 
+            <!-- Centro sinistra-->
           <div class="footer-center">
               <div>maree.quode@gmail.com</div>
               <div>+44697 843 521</div>
           </div>
 
+            <!--Centro destra-->
           <div class="footer-center2">
               <div>Avenue d'Auderghem 10</div>
               <div>1040 Brussels, Belgium</div>
           </div>
 
+            <!--Destra-->
           <div class="footer-right">
               <div>Stay in touch whit us</div>
               <div class="social-icons">
@@ -51,28 +55,28 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 12px;
-}
-.container-footer-contents {
-    width: 54%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 40px;
-    line-height: 2em;
-}
-.maree-logo {
-    width: 100px;
-}
-.social-icons {
-    width: 120px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.fa-twitter, .fa-pinterest-p, .fa-facebook-f, .fa-linkedin-in {
-    cursor: pointer;
-}
 
+        .container-footer-contents {
+            width: 54%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 40px;
+            line-height: 2em;
 
+                .maree-logo {
+                    width: 100px;
+                }
+                .social-icons {
+                    width: 120px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
 
+                        .fa-twitter, .fa-pinterest-p, .fa-facebook-f, .fa-linkedin-in {
+                            cursor: pointer;
+                        }
+                }
+        }
+}
 </style>
